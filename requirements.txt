@@ -1,2 +1,6 @@
 openai
 streamlit==1.42.2
+numpy
+opencv-python==4.11.0.86
+pillow==11.1.0
+tiktoken
