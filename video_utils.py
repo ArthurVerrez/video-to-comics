@@ -340,8 +340,8 @@ def get_full_video_description_with_dialogues(video_file, interval=10):
             temperature=0.7,  # Added temperature for more natural responses
         )
 
-        return response.choices[0].message.content
+        return response.choices[0].message.content, messages
 
     except Exception as e:
         print(f"An error occurred while analyzing the video: {str(e)}")
-        return None
+        return None, messages
